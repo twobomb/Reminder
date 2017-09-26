@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:title="Добавить пару"
+            android:id="@+id/item_add"/>
+    <item
+            android:title="Настройки"
+            android:id="@+id/item_settings"/>
+    <item
+            android:title="Скрыть все"
+            android:id="@+id/item_hideAll"/>
+    <item
+            android:title="Показать все"
+            android:id="@+id/item_showAll"/>
+</menu>

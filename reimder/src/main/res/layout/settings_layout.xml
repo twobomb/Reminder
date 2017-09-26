@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/tool_id"
+            app:title="Настройки"
+            app:logo="@android:drawable/ic_menu_preferences"
+            android:paddingLeft="20dp"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:text="Включить уведомления"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="?android:attr/textColorPrimary"/>
+
+                <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sw_notifOn"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:splitTrack="false"
+                        />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:text="Уведомлять за"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_prevSignal"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="?android:attr/textColorPrimary"/>
+
+                <SeekBar
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="15"
+                        android:progress="5"
+                        android:id="@+id/sb_prevSignal"
+                        android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:text="Частота обновления(сек)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView4"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="?android:attr/textColorPrimary"/>
+
+                <NumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/np_freq"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:text="Тема"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView1"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="?android:attr/textColorPrimary"/>
+
+                <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_theme"
+                        android:layout_weight="1"
+                        tools:listitem="@android:layout/activity_list_item"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:text="Сигнал"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView2"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="?android:attr/textColorPrimary"/>
+
+                <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_signal"
+                        android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <TextView
+                        android:text="Длительность пары"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView3"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:gravity="center_vertical"
+                        android:textColor="?android:attr/textColorPrimary"/>
+
+                <NumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/np_hourLess"/>
+
+                <NumberPicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/np_minLess"/>
+
+            </LinearLayout>
+
+            <Button
+                    android:text="Назад"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_back"
+                    android:layout_weight="1"
+                    android:textColor="?android:attr/actionMenuTextColor">
+
+                <requestFocus/>
+            </Button>
+
+            <Button
+                    android:text="Сбросить все"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_reset"
+                    android:layout_weight="1"
+                    android:textColor="?android:attr/actionMenuTextColor">
+
+                <requestFocus/>
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

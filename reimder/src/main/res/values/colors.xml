@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="last_less">#b71c1c</color>
+    <color name="cur_less">#33691e</color>
+    <color name="next_less">#e65100</color>
+    <color name="primaryColor">#5e35b1</color>
+    <color name="primaryLightColor">#9162e4</color>
+    <color name="primaryDarkColor">#280680</color>
+    <color name="secondaryColor">#ff9800</color>
+    <color name="secondaryLightColor">#ffc947</color>
+    <color name="secondaryDarkColor">#c66900</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="secondaryTextColorLight">#646464</color>
+    <color name="primaryBackground">#ede7f6</color>
+    <color name="primary_material_light">#212121</color>
+    <color name="primary_dark_material_light">#000000</color>
+    <color name="background_material_light">#303030</color>
+    <color name="primary_text_default_material_light">#de000000</color>
+    <color name="primary_text_default_material_dark">#ffffff</color>
+    <color name="secondary_text_disabled_material_light">#24ffffff</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="end_date_dark">#b4b4b4</color>
+    <color name="end_date_light">#494949</color>
+    <color name="primary_text_disabled_material_light">#5dffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="primary_material_light1">#f5f5f5</color>
+    <color name="primary_dark_material_light1">#e0e0e0</color>
+    <color name="background_material_light1">#fafafa</color>
+    <color name="secondary_text_default_material_dark1">#b3000000</color>
+    <color name="primary_text_disabled_material_dark1">#4d000000</color>
+    <color name="primary_text_default_material_dark1">#000000</color>
+    <color name="secondary_text_disabled_material_light1">#24000000</color>
+    <color name="primary_text_disabled_material_light1">#5d000000</color>
+
+</resources>

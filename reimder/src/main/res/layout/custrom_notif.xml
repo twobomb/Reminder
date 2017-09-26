@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#545454"
+            android:gravity="center_horizontal"
+        >
+
+    <ImageView
+            android:layout_height="129dp"
+            android:background="@drawable/bg"
+            android:contentDescription="Hello,world!"
+            android:layout_row="0"
+            android:layout_column="0"
+            />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="До конца занятия 55 мин\nДо конца занятий 3 часа 25 минут\nСейчас идет перерыв"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_noti_info"
+                    android:inputType="textMultiLine"
+                    android:alpha="1"
+                    android:textColor="@color/background_material_light1"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    />
+
+        </LinearLayout>
+
+        <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" android:columnCount="2">
+
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/grad"
+                    >
+
+                <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/notif_btn_eye"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/d_eye_open"/>
+
+                <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/notif_btn_sound"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/d_sound"/>
+
+                <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/notif_btn_settings"
+                        android:layout_weight="1"
+                        android:background="@drawable/d_settings"
+                        android:cropToPadding="false"
+                        android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+        </GridLayout>
+
+    </LinearLayout>
+
+</GridLayout>

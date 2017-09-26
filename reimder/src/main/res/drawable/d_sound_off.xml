@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:state_pressed="true"
+            android:state_enabled="true"
+            android:drawable="@drawable/sound_off_w" />  // Нажатое состояние
+    <item
+            android:state_enabled="true"
+            android:drawable="@drawable/sound_off" />  //ненажатое состояние
+</selector>

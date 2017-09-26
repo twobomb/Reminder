@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyLightTheme" parent="Theme.AppCompat.Light">
+
+        <item name="android:colorBackground">@color/background_material_light1</item>
+        <item name="colorAccent">@android:color/holo_red_light</item>
+        <item name="colorPrimary">@color/primary_material_light1</item>
+        <item name="colorPrimaryDark">@color/primary_dark_material_light1</item>
+        <item name="android:colorForeground">@color/primary_dark_material_light1</item>
+        <item name="android:textColorSecondaryInverse">@color/secondary_text_material_dark</item>
+        <item name="android:windowBackground">@color/background_material_light1</item>
+        <item name="android:textColorPrimaryInverse">@color/primary_text_material_dark</item>
+        <item name="android:textColorPrimary">@color/primary_text_material_dark</item>
+
+
+    </style>
+
+    <style name="MyDarkTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@android:color/holo_red_light</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorPrimaryInverse">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/primaryTextColor</item>
+        <item name="android:textColor">@color/secondaryTextColorLight</item>
+        <item name="listChoiceBackgroundIndicator">@color/next_less</item>
+        <item name="android:colorBackground">?attr/colorPrimary</item>
+        <item name="android:colorForeground">@color/secondaryTextColorLight</item>
+    </style>
+</resources>
